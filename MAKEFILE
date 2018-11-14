@@ -1,0 +1,5 @@
+all: requirements migrations
+requirements: ## install basic environment requirements
+    pip3 install -qr requirements/requirements.txt
+migrations: 
+	python3 manage.py makemigrations &&  python3 manage.py migrate
