@@ -2,14 +2,20 @@
 
 All you gotta do is `git clone https://github.com/aircert/modern_health_api.git` then `make`
 
-Login with Admin credentials upon visiting http://localhost:8000/programs | http://localhost:8000/weeks | http://llocalhost:8000/pages
+Login with Admin credentials upon visiting 
 
 ```
 	username: admin
 	password: admin
 ```
 
+http://localhost:8000/programs
+http://localhost:8000/weeks
+http://llocalhost:8000/pages
+
+
 Pages must be created prior to Weeks.
+
 Weeks must be created prior to Programs.
 
 ### Steps to create pages
