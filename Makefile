@@ -11,7 +11,7 @@ migrate:
 	python3 manage.py migrate
 
 create_admin:
-	echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@example.com', 'admin')" | python manage.py shell
+	echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@example.com', 'admin')" | python3 manage.py shell
 
 start:
 	python3 manage.py runserver
