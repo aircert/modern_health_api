@@ -7,7 +7,7 @@ Login with Admin credentials upon visiting http://llocalhost:8000/programs | htt
 Pages must be created prior to Weeks.
 Weeks must be created prior to Programs.
 
-###Steps to create pages
+### Steps to create pages
 
 1) visit (http://localhost:8000/pages)
 
@@ -37,7 +37,7 @@ Weeks must be created prior to Programs.
 }
 ```
 
-###Steps to create weeks 
+### Steps to create weeks 
 
 1) visit (http://localhost:8000/weeks)
 
@@ -59,7 +59,7 @@ Weeks must be created prior to Programs.
 }
 ```
 
-###Steps to create programs
+### Steps to create programs
 
 1) visit (http://localhost:8000/programs)
 
