@@ -1,7 +1,7 @@
 all: install test migrate start link
 
 install:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 test:
 	python3 manage.py test
@@ -12,6 +12,3 @@ migrate:
 
 start:
 	python3 manage.py runserver
-
-link:
-	@echo "\n\n\nView Screencast: https://youtu.be/eAOL0tKhXJY"
