@@ -14,4 +14,4 @@ start:
 	python3 manage.py runserver
 
 link:
-	@echo "\n\n\nView Screencast: test.com"
+	@echo "\n\n\nView Screencast: https://youtu.be/eAOL0tKhXJY"
