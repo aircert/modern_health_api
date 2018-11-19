@@ -1,8 +1,11 @@
 # modern_health_api
 
-All you gotta do is `git clone https://github.com/aircert/modern_health_api.git` then `make`
+All you gotta do is 
+`git clone https://github.com/aircert/modern_health_api.git`
+`cd modern_health_api`
+`make`
 
-### Login with Admin credentials
+### Admin credentials
 
 ```
 username: admin
@@ -84,5 +87,9 @@ password: admin
     "weeks": [1,2]
 }
 ```
+
+### Steps to update a model
+
+visit (http://localhost:8000/<model>/:id): http://localhost:8000/pages/1
 
 Link to screencast: https://youtu.be/eAOL0tKhXJY
