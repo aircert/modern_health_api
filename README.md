@@ -1,9 +1,11 @@
 # modern_health_api
 
 All you gotta do is 
-`git clone https://github.com/aircert/modern_health_api.git`
-`cd modern_health_api`
-`make`
+```
+    git clone https://github.com/aircert/modern_health_api.git
+    cd modern_health_api
+    make
+```
 
 ### Admin credentials
 
