@@ -1,6 +1,6 @@
 # modern_health_api
 
-All you gotta do is 
+All you gotta do is; If you run into issues, email me at dgolman@vt.edu
 ```
     git clone https://github.com/aircert/modern_health_api.git
     cd modern_health_api
