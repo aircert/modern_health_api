@@ -32,7 +32,7 @@ class CreateWeekView(generics.ListCreateAPIView):
         IsOwner)
 
     def perform_create(self, serializer):
-        """Save the post data when creating a new Program."""
+        """Save the post data when creating a new Week."""
         serializer.save(owner=self.request.user)
 
 class DetailsWeekView(generics.RetrieveUpdateDestroyAPIView):

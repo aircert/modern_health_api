@@ -4,9 +4,18 @@ from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 from django.dispatch import receiver
 
+
+from enum import Enum
+
+class ProgramCategoryChoice(Enum):   # A subclass of Enum
+    Finance = "Finance"
+    Emotions = "Emotions"
+    Physical = "Physical"
+    Life = "Life"
+
 class Page(models.Model):
-    # use models.URLField()
     name = models.CharField(max_length=255, blank=False, unique=False)
+    complete = models.BooleanField(default=False)
     audio = models.URLField()
     video = models.URLField()
     article = models.URLField()
@@ -20,7 +29,7 @@ class Page(models.Model):
 
     def __str__(self):
         """Return a human readable representation of the model instance."""
-        return "{}".format(self.name)   
+        return "{}".format(self.name)  
 
 class Week(models.Model):
     name = models.CharField(max_length=255, blank=False, unique=False)
@@ -46,6 +55,10 @@ class Program(models.Model):
     on_delete=models.CASCADE) 
   date_created = models.DateTimeField(auto_now_add=True)
   date_modified = models.DateTimeField(auto_now=True)
+  category = models.CharField(
+    max_length=5,
+    choices=[(tag, tag.value) for tag in ProgramCategoryChoice],
+    default=None)
 
   def __str__(self):
     """Return a human readable representation of the model instance."""

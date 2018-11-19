@@ -1,4 +1,4 @@
-all: install test migrate create_admin start
+all: install migrate create_admin start
 
 install:
 	pip3 install -r requirements.txt
